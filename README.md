@@ -5,67 +5,67 @@ Diabetic Retinopathy (DR) is a common complication of diabetes mellitus, which c
 
 
 # Project Objectives
-  Know fundamental concepts and techniques of transfer learning like Xception.
+  - Know fundamental concepts and techniques of transfer learning like Xception.
 
-  Gain a broad understanding of image data.
+  - Gain a broad understanding of image data.
 
-  Know how to pre-process/clean the data using different data pre-processing techniques.
+  - Know how to pre-process/clean the data using different data pre-processing techniques.
 
-  Know how to build a web application using the Flask framework.
+  - Know how to build a web application using the Flask framework.
   
 # Project Flow
 
-The user interacts with the UI (User Interface) to choose the image.
+* The user interacts with the UI (User Interface) to choose the image.
 
-The chosen image analyzed by the model which is integrated with flask application.
+* The chosen image analyzed by the model which is integrated with flask application.
 
-The Xception Model analyzes the image, then the prediction is showcased on the Flask UI.
+* The Xception Model analyzes the image, then the prediction is showcased on the Flask UI.
 
 ## To accomplish this, we have to complete all the activities and tasks listed below
 
 Data Collection.
 
-    Create a Train and Test path.
+   - [ ] Create a Train and Test path.
 
 Data Pre-processing.
 
-    Import the required library
+   - [ ] Import the required library
 
-    Configure ImageDataGenerator class
+   - [ ] Configure ImageDataGenerator class
 
-    Apply ImageDataGenerator functionality to Trainset and Testset
+   - [ ] Apply ImageDataGenerator functionality to Trainset and Testset
 
 Model Building
 
-    Pre-trained CNN model as a Feature Extractor
+   - [ ] Pre-trained CNN model as a Feature Extractor
 
-    Adding Dense Layer
+   - [ ] Adding Dense Layer
 
-    Configure the Learning Process
+   - [ ] Configure the Learning Process
 
-    Train the model
+   - [ ] Train the model
 
-    Save the Model
+   - [ ] Save the Model
 
-    Test the model
+   - [ ] Test the model
 
 Cloudant DB
 
-    Register & Login to IBM Cloud
+   - [ ] Register & Login to IBM Cloud
 
-    Create Service Instance
+   - [ ] Create Service Instance
 
-    Creating Service Credentials
+   - [ ] Creating Service Credentials
 
-    Launch Cloudant DB
+   - [ ] Launch Cloudant DB
 
-    Create Database
+   - [ ] Create Database
 
 Application Building
 
-    Create an HTML file
+   - [ ] Create an HTML file
 
-    Build Python Code
+   - [ ] Build Python Code
     
  
  ## Technical Architecture
