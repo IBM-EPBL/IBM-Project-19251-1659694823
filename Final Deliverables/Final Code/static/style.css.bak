@@ -1,0 +1,222 @@
+:root{
+    --main-bg-color: #fff;
+    --text-color:#ced4da;
+    --bs-font-sans-serif: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --navbar-bg:#333;	
+    --hover-color:#228B22;
+    --yellow:#FFD700;	
+    --box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+
+}
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--main-bg-color);
+    font-family: var(--bs-font-sans-serif);
+    color: #333;
+    line-height: 1.6;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+h1,h2{
+    font-weight: 360;
+    line-height: 1.2;
+}
+p{
+ margin: 10px 0px;
+
+}
+
+.m2{
+    margin-right: 10px;
+}
+
+/* utility */
+.title{
+    margin-top: 10px;
+    text-align: center;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Header */
+#head #navbar{
+    height: 100px;
+    width: auto;
+    background-color: var(--navbar-bg);
+    color: #fff;
+    padding: 10px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar .nav--items ul{
+    display: flex;
+    align-items: center;
+}
+
+#navbar .nav--items ul li a{
+margin: 10px;
+text-decoration: none;
+}
+#navbar .nav--items ul li a:hover{
+    color:var(--hover-color) ;
+}
+
+/* header carousel */
+#head #slider .carousel-item img{
+    display: block;
+    width:100%;
+    height: 70vh;
+}
+
+.font{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* About */
+#about .top{
+    margin-top: 20px;
+}
+
+ .line{
+    background-color: var(--yellow);
+    width: 200px;
+    height: 2px;
+    margin: auto;
+    margin-top: 10px;
+}
+#about .body{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+#about .body .right,#about .body .left
+{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+margin: 0.5rem;
+}
+
+#about .body .right p{
+    justify-self: center;
+    margin-top: 50px;
+}
+/* Services */
+#services .testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    margin: 40px;
+   justify-items: center;
+ 
+}
+#services .testimonials .card{
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ text-align: center;
+}
+
+#services .testimonials .card h5{
+text-transform: uppercase;
+}
+
+/* Contcat form */
+#contact .contact-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    margin: 3rem;
+}
+#contact .contact-container .conatct-left .items h3{
+    display: inline;
+    margin-left: 10px;
+}
+
+#contact .contact-container .conatct-left .items{
+    margin: 10px;
+    margin-bottom: 30px;
+
+}
+
+#contact .contact-container .contact-right form input,
+#contact .contact-container .contact-right form button
+ {
+    display: block;
+    margin: 20px 
+    }
+
+ /* footer */   
+ #footer {
+     width: auto;
+     height: 80px;
+        background-color: var(--navbar-bg);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+ }
+ #footer .social a{
+    margin-left: 20px;
+    text-decoration: none;
+ }
+ #footer .social a:hover{
+     color: var(--hover-color);
+ }
+/* prediction.html */
+
+#prediction .prediction-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+#prediction .prediction-input form{
+    margin-left: 1.2rem;
+}
+#prediction .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    box-shadow:var(--box-shadow);
+    transition:all ease-in 1s;
+}
+
+.output{
+    width: 200px;
+    margin: 10rem 1.5rem;
+    padding: 6px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.output-container{
+    display: grid;
+    row-gap: 10px;
+    grid-template-areas: 'img1 img2 img3 img4 img5 img6';
+}
+
+/* Hidden class */
+.hidden{
+    visibility: hidden;
+}
+.hide{
+    visibility: hidden;
+}

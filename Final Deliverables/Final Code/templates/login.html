@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Login Page</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<!link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+
+<style>
+.header {	
+			top:0;	
+			margin:0px;
+			left: 0px;
+			right: 0px;
+			position: fixed;
+			background-color: #28272c;
+			color: white;
+			box-shadow: 0px 8px 4px grey;
+			overflow: hidden;
+			padding-left:20px;
+			font-family: 'Josefin Sans';
+			font-size: 2vw;
+			width: 100%;
+			height:8%;
+			text-align: center;
+		}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav-right a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav-right a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav-right a.active {
+  background-color: #565961;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+  padding-right:100px;
+}
+		
+.login{
+margin-top:-70px;
+}
+body {
+
+  background-color:#ffffff;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: 0px 0px;
+  }
+.login{
+	margin-top:100px;
+}
+form {border: 3px solid #f1f1f1; margin-left:400px;margin-right:400px;}
+
+input[type=text], input[type=email],input[type=number],input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  margin-bottom:18px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #28272c;
+  color: white;
+  padding: 14px 20px;
+  margin-bottom:8px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight:bold;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+  
+</style>
+</head>
+
+<body style="font-family:Montserrat;">
+
+<div class="header">    
+ <div style="width:50%;float:left;font-size:2vw;text-align:left;color:white; padding-top:1%">DR Login Page</div>
+  <div class="topnav-right" style="padding-top:0.5%;">
+    
+    <a  href="{{ url_for('index')}}">Home</a>
+    <a class="active" href="{{ url_for('login')}}">Login</a>
+    <a  href="{{ url_for('register')}}">Register</a>
+	
+  </div>
+</div>
+<div id="login" class="login">
+	
+	
+	<form action="{{url_for('afterlogin')}}" method="post">
+		<div class="imgcontainer">
+			<img style="" src="https://pngimage.net/wp-content/uploads/2018/05/agriculteur-png.png" alt="Avatar" class="avatar">
+		</div>
+
+		<div class="container">
+			<input type="email" placeholder="Enter registered email ID" name="_id" required><br>
+			
+			<input type="password" placeholder="Enter Password" name="psw" required>	
+        
+			<button type="submit">Login</button><br>
+    {{pred}}
+		</div>
+	</form>	
+     
+</div>
+
+ 
+</body>
+</html>
